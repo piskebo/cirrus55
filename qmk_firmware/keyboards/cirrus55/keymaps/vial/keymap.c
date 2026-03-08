@@ -5,12 +5,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {};
 // 状態を記憶しておく変数
 bool is_scroll_mode = false;
 
-// ■ 左右の感度補正用倍率（2.0から2.5へ変更）
+// 左右の感度補正用倍率
 #define X_SENSITIVITY 2.5
 
-// スクロールの速度調整（数値を大きくすると遅くなる）
-#define SCROLL_DIVISOR_X 8.0
-#define SCROLL_DIVISOR_Y 8.0
+// ■ スクロールの速度調整（数値を大きくするとさらに遅くなる）
+#define SCROLL_DIVISOR_X 16.0
+#define SCROLL_DIVISOR_Y 16.0
 
 // QMK公式準拠：スクロール蓄積用変数
 float scroll_accumulated_h = 0;
